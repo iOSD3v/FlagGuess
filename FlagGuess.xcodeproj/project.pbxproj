@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		955360942E9B0089001D4C86 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955360932E9B0089001D4C86 /* LeaderboardView.swift */; };
 		95C62A102E817F860097CECC /* FlagGuessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C62A0F2E817F860097CECC /* FlagGuessApp.swift */; };
 		95C62A122E817F860097CECC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C62A112E817F860097CECC /* ContentView.swift */; };
 		95C62A142E817F890097CECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C62A132E817F890097CECC /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		95C62A212E817F8A0097CECC /* FlagGuessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C62A202E817F8A0097CECC /* FlagGuessTests.swift */; };
 		95C62A2B2E817F8A0097CECC /* FlagGuessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C62A2A2E817F8A0097CECC /* FlagGuessUITests.swift */; };
 		95C62A2D2E817F8A0097CECC /* FlagGuessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C62A2C2E817F8A0097CECC /* FlagGuessUITestsLaunchTests.swift */; };
+		95C62A3A2E83E5160097CECC /* FlagGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C62A392E83E5160097CECC /* FlagGameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		955360932E9B0089001D4C86 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		95C62A0C2E817F860097CECC /* FlagGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C62A0F2E817F860097CECC /* FlagGuessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGuessApp.swift; sourceTree = "<group>"; };
 		95C62A112E817F860097CECC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		95C62A262E817F8A0097CECC /* FlagGuessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagGuessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C62A2A2E817F8A0097CECC /* FlagGuessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGuessUITests.swift; sourceTree = "<group>"; };
 		95C62A2C2E817F8A0097CECC /* FlagGuessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGuessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95C62A392E83E5160097CECC /* FlagGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagGameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		95C62A0E2E817F860097CECC /* FlagGuess */ = {
 			isa = PBXGroup;
 			children = (
+				95C62A392E83E5160097CECC /* FlagGameModel.swift */,
 				95C62A0F2E817F860097CECC /* FlagGuessApp.swift */,
 				95C62A112E817F860097CECC /* ContentView.swift */,
+				955360932E9B0089001D4C86 /* LeaderboardView.swift */,
 				95C62A132E817F890097CECC /* Assets.xcassets */,
 				95C62A152E817F890097CECC /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955360942E9B0089001D4C86 /* LeaderboardView.swift in Sources */,
 				95C62A122E817F860097CECC /* ContentView.swift in Sources */,
 				95C62A102E817F860097CECC /* FlagGuessApp.swift in Sources */,
+				95C62A3A2E83E5160097CECC /* FlagGameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
