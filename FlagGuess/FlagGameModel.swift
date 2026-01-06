@@ -33,6 +33,7 @@ class FlagGameModel: ObservableObject {
     private let maxQuestions = 8
     private var gameStartTime: Date?
     private var timer: Timer?
+    private var gameStarted = false
 
     init() {
         loadLeaderboard()
@@ -40,6 +41,11 @@ class FlagGameModel: ObservableObject {
     }
 
     func flagTapped(_ number: Int) {
+        if !gameStarted {
+            startTimer()
+            gameStarted = true
+        }
+
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
@@ -65,7 +71,8 @@ class FlagGameModel: ObservableObject {
         questionCount = 0
         score = 0
         currentTime = 0
-        startTimer()
+        gameStarted = false
+        stopTimer()
         askQuestion()
     }
 
